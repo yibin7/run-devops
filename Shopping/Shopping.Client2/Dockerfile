@@ -7,8 +7,8 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
-COPY ["Shopping.Client2/Shopping.Client2.csproj", "Shopping.Client2/"]
-#COPY ["./Shopping.Client2.csproj", "/app/src/Shopping.Client2/"]
+#COPY ["Shopping.Client2/Shopping.Client2.csproj", "Shopping.Client2/"]
+COPY ["./Shopping.Client2.csproj", "/app/src/Shopping.Client2/"]
 
 WORKDIR /app/src/Shopping.Client2
 RUN dotnet restore "Shopping.Client2/Shopping.Client2.csproj"
