@@ -15,7 +15,7 @@ WORKDIR /app/src/Shopping.Client2
 RUN dotnet restore "Shopping.Client2.csproj"
 COPY . .
 
-#WORKDIR "/src/Shopping.Client2"
+##WORKDIR "/src/Shopping.Client2"
 WORKDIR /app/src/Shopping.Client2
 RUN dotnet build "Shopping.Client2.csproj" -c Release -o /app/build
 
