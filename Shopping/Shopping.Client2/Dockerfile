@@ -5,6 +5,7 @@ WORKDIR /app
 #WORKDIR /app/src
 EXPOSE 80
 
+#For Testing 2021-4-29
 FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 #WORKDIR /src
 WORKDIR /app/src/Shopping.Client2
